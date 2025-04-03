@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resultados de Calculos</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Operacion</th>
+                <th>Resultados</th>
+            </tr>
+            <tr><td>Suma (4+5)</td><td id="suma1"></td></tr>
+            <tr><td>Resta (3-6)</td><td id="resta1"></td></tr>
+            <tr><td>Multiplicacion (2*7)</td><td id="multiplicacion1"></td></tr>
+            <tr><td>Division (20/4)</td><td id="division1"></td></tr>
+            <tr><td>Suma (5+3)</td><td id="suma2"></td></tr>
+            <tr><td>Resta (8-6)</td><td id="resta2"></td></tr>
+            <tr><td>Multiplicacion (3*11)</td><td id="multiplicacion2"></td></tr>
+            <tr><td>Division (30/5)</td><td id="division2"></td></tr>
+        </table>
+        <script>
+            document.getElementById("suma1").innerText = 4 + 5;
+            document.getElementById("resta1").innerText = 3 - 6;
+            document.getElementById("multiplicacion1").innerText = 2 * 7;
+            document.getElementById("division1").innerText = 20 / 4;
+            document.getElementById("suma2").innerText = 5 + 3;
+            document.getElementById("resta2").innerText = 8 - 6;
+            document.getElementById("multiplicacion2").innerText = 3 * 11;
+            document.getElementById("division2").innerText = 30 / 5;
+        </script>
+    </body>
+</html>
