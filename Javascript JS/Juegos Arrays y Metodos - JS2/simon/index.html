@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simón Dice</title>
+  <link rel="stylesheet" href="public/css/style.css" />
+</head>
+<body>
+  <h1>Simón Dice</h1>
+  <div id="registro">
+  <input type="text" id="jugador" placeholder="Ingresa tu nombre" />
+  <button id="guardarJugador">Guardar</button>
+  </div>
+  <p id="bienvenida"></p>
+  <p id="ronda">Ronda: 0</p>
+  <div id="tablero">
+    <div id="rojo" class="color"></div>
+    <div id="verde" class="color"></div>
+    <div id="azul" class="color"></div>
+    <div id="amarillo" class="color"></div>
+  </div>
+  <button id="comenzar">Comenzar Juego</button>
+  <h3>🏆 Mejores Puntajes</h3>
+<ul id="tabla-scores"></ul>
+
+  <script src="public/js/script.js"></script>
+</body>
+</html>

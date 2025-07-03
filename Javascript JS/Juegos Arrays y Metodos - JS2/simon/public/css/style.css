@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 30px;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  color: #333;
+}
+
+#registro {
+  margin-bottom: 15px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#ronda {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+#tablero {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.color {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.color.activo {
+  opacity: 1;
+  box-shadow: 0 0 15px #000;
+}
+
+#rojo { background-color: red; }
+#verde { background-color: green; }
+#azul { background-color: blue; }
+#amarillo { background-color: yellow; }
+
+#tabla-scores {
+  list-style: none;
+  padding: 0;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#tabla-scores li {
+  background-color: #fff;
+  padding: 8px 12px;
+  margin: 5px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

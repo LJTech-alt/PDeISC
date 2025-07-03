@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Piedra, Papel o Tijeras</title>
+  <link rel="stylesheet" href="/public/css/style.css" />
+</head>
+<body>
+  <h1>Piedra, Papel o Tijeras</h1>
+
+  <div id="registro">
+    <input type="text" id="jugador" placeholder="Tu nombre" />
+    <button id="guardar">Guardar</button>
+  </div>
+
+  <p id="bienvenida"></p>
+
+  <div id="area-juego" class="oculto">
+
+    <h2>CPU</h2>
+    <div class="opciones cpu">
+      <img src="public/img/piedra.png" id="cpu-piedra" class="opcion" alt="Piedra CPU" />
+      <img src="/public/img/papel.png" id="cpu-papel" class="opcion" alt="Papel CPU" />
+      <img src="/public/img/tijera.png" id="cpu-tijeras" class="opcion" alt="Tijeras CPU" />
+    </div>
+
+    <h2>Tu Jugada</h2>
+    <div class="opciones jugador">
+      <img src="/public/img/piedra.png" class="opcion jugador-btn" data-opcion="piedra" alt="Piedra" />
+      <img src="/public/img/papel.png" class="opcion jugador-btn" data-opcion="papel" alt="Papel" />
+      <img src="/public/img/tijera.png" class="opcion jugador-btn" data-opcion="tijeras" alt="Tijeras" />
+    </div>
+
+    <p id="resultado" class="oculto"></p>
+    <button id="btn-reiniciar" class="oculto">Volver a jugar</button>
+  </div>
+
+  <h3>🏆 Mejor Racha</h3>
+  <ul id="ranking"></ul>
+
+  <script src="/public/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to top right, #f2fcff, #dff1ff);
+  text-align: center;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#registro input {
+  padding: 10px;
+  font-size: 1rem;
+  margin: 10px;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.opciones {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 15px 0;
+}
+
+.opcion {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: transform 0.2s ease, border 0.3s ease;
+  cursor: pointer;
+}
+
+.opcion:hover {
+  transform: scale(1.1);
+}
+
+.cpu .opcion {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.seleccionado {
+  border: 3px solid #3498db;
+  box-shadow: 0 0 10px #2980b9;
+  transform: scale(1.05);
+}
+
+#resultado {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+
+#ranking {
+  list-style: none;
+  max-width: 300px;
+  margin: 30px auto;
+  background-color: #ffffffdd;
+  border-radius: 6px;
+  padding: 15px 20px;
+  text-align: left;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+#ranking li {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+}
+
+.oculto {
+  display: none;
+}
+
+#btn-reiniciar {
+  margin-top: 20px;
+  background-color: #2ecc71;
+}
+
+#btn-reiniciar:hover {
+  background-color: #27ae60;
+}
