@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Filtrado de Números</title>
+    <link rel="stylesheet" href="/public/css/style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Filtrar Números de Archivo TXT</h1>
+
+        <input type="file" id="archivo" accept=".txt" />
+        <button id="procesar">Procesar archivo</button>
+
+        <div id="resultado" class="hidden">
+            <h2>Números válidos</h2>
+            <ul id="lista-validos"></ul>
+
+            <p>Total válidos: <span id="total-validos">0</span></p>
+            <p>total invalidos: <span id="total-invalidos">0</span></p>
+            <p>Porcentaje válidos: <span id="porcentaje">0</span>%</p>
+
+            <button id="guardar">Guardar resultado</button>
+        </div>
+    </div>
+
+    <script src="/public/js/script.js"></script>
+</body>
+</html>
